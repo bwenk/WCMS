@@ -1,0 +1,191 @@
+<html>
+<head>
+  <title>WCMS</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Bruno Wenk">
+  <meta name="date" content="2018-03-15"
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <style>
+    body {font-family: 'Josefin Slab', serif;}
+    h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans Condensed', sans-serif;}
+    .hint {font-family: 'Open Sans Condensed', sans-serif;}
+    .w3-bar,h1,button {font-family: 'Open Sans Condensed', sans-serif;}
+    .w3-theme-l5 {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-l4 {color:#000 !important; background-color:#fcf2dc !important}
+    .w3-theme-l3 {color:#000 !important; background-color:#f9e6ba !important}
+    .w3-theme-l2 {color:#000 !important; background-color:#f5d997 !important}
+    .w3-theme-l1 {color:#000 !important; background-color:#f2cd75 !important}
+    .w3-theme-d1 {color:#000 !important; background-color:#ecb535 !important}
+    .w3-theme-d2 {color:#000 !important; background-color:#e9ab18 !important}
+    .w3-theme-d3 {color:#fff !important; background-color:#ce9613 !important}
+    .w3-theme-d4 {color:#fff !important; background-color:#b08010 !important}
+    .w3-theme-d5 {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-light {color:#000 !important; background-color:#fefbf5 !important}
+    .w3-theme-dark {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme-action {color:#fff !important; background-color:#936b0e !important}
+    .w3-theme {color:#000 !important; background-color:#efc050 !important}
+    .w3-text-theme {color:#efc050 !important}
+    .w3-theme-border {border-color:#efc050 !important}
+    .w3-hover-theme:hover {color:#000 !important; background-color:#efc050 !important}
+	
+	.accordion {
+    background-color: #ecb535;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+  </style>
+  
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-l1 w3-card w3-left-align w3-large">
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-theme-l1 w3-center" style="padding:64px 16px">
+  <h1 class="w3-margin w3-jumbo">Web Content Management Systems (WCMS)</h1>
+  <h2>Eine kurze Einführung</h2>
+  <button class="accordion">Ziele</button>
+<div class="panel">
+  <p>Es gibt laufend neue Webauftritte von grossen und kleinen Unternehmen, Institutionen und einzelnen Personen. Die Anzahl der Personen, 
+     die sich mit HTML, CSS und JavaScript auskennen, nimmt aber nicht im gleichen Masse zu. Wie ist das möglich? Die Antwort lautet: Mit Web Content Management Systemen. 
+	 Wie funktioniert das?</p>
+  </div>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div>
+      <h1>Was ist ein Web Content Management System?</h1>
+      <p class="w3-text-grey w3-large">Ein Web Content Management System (WCMS) ist eine Web-Applikation zur Erstellung und Pflege eines Webauftritts (website) mit den dazugehörenden Webseiten (webpages).</p>
+      <p class="w3-text-grey w3-large">Ein WCMS stellt Funktionen zur Verfügung, um die Inhalte der Webseiten (Texte, Bilder, Tabellen, usw.) zu verwalten, die Form der Darstellung der Inhalte (Farbschema, Typographie, Layout, usw.) zu vereinheitlichen und die Navigationselemente passend zu platzieren. </p>
+      <p class="w3-text-grey w3-large">Einfache WCMS ermöglichen einer einzelnen Person ohne vertiefte Kenntnisse von HTML, CSS und JavaScript, eine Website mit geringer Komplexität zu erstellen und zu pflegen. Um einen Webauftritt mit einer komplexen Struktur und zahlreichen Webseiten mit mehreren Personen in unterschiedlichen Rollen erstellen und pflegen zu können, stellen anspruchsvollere WCMS auch eine Nutzerverwaltung und Funktionen für die Steuerung und Kontrolle der Arbeitsabläufe zur Verfügung.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+    <div class="w3-half w3-padding-large">
+      <h1>&nbsp;</h1>
+      <img style="display:block; margin:auto;" src="WCMS_Architektur.svg">
+      <p class="hint w3-small w3-center"><a href="WCMS_Architektur.svg" target="_blank">Grafik vergrössern</a></p>
+    </div>
+
+    <div class="w3-half">
+      <h1>Die Architektur eines (einfachen) WCMS</h1>
+      <p class="w3-text-grey w3-large">Ein WCMS umfasst zwei Komponenten: Backend und Frontend.</p>
+      <p class="w3-text-grey w3-large">Das Backend besteht aus einem Web-Server mit einer Datenbank und dem Programm zur Verwaltung der Inhalte (Texte, Bilder, Tabellen, usw.) des Webauftritts. Das Aufsetzen des Backends erfordert vertiefte Kenntnisse des verwendeten WCMS. Zum Aufsetzen gehört auch die Formulierung der CSS-Regeln, die dem Webauftritt ein passendes, einheitliches Erscheinungsbild verschaffen.</p>
+      <p class="w3-text-grey w3-large">Das Frontend ist ein Teil des Programms zur Verwaltung der Inhalte des Webauftritts. Es handelt sich dabei um eine Webapplikation, die den Betreibern des Webauftritts dessen Strukturierung und die Eingabe und Pflege der Inhalte ermöglicht. Die Bedienung des Frontends erfolgt im Browser (Client); sie erfordert keine vertieften Kenntnisse der Webtechnologien (HTML, CSS, JavaScript). Grundkenntnisse sind aber hilfreich für die Gestaltung spezieller Elemente von Webseiten (z.B. interaktive Elemente wie ein <a href="https://www.w3schools.com/howto/howto_js_accordion.asp" target="_blank">Accordion</a> oder <a href="https://www.w3schools.com/howto/howto_js_tabs.asp" target="_blank">Tabs</a>).</p>
+      <p class="w3-text-grey w3-large">Der veröffentlichte Webauftritt ist schliesslich über dessen Web-Adresse (URL) für das Zielpublikum zugänglich.</p>
+    </div>
+  </div>
+</div>
+    
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+  <div class="w3-content">
+    <h1>Beispiele</h1>
+    <div class="w3-third w3-padding-large">
+      <p class="w3-large"><a href="https://www.jimdo.com" target="_blank">Jimdo</a></p>
+    </div>
+    <div class="w3-twothird w3-padding-large">
+      <a href="https://www.jimdo.com" target="_blank"><img src="jimdo.png" width="90%"></a>
+    </div>
+      
+    <div class="w3-third w3-padding-large">
+      <p class="w3-large"><a href="https://de.wix.com" target="_blank">Wix</a></p>
+    </div>
+    <div class="w3-twothird w3-padding-large">
+      <a href="https://de.wix.com" target="_blank"><img src="wix.png" width="90%"></a>
+    </div>
+      
+    <div class="w3-third w3-padding-large">
+      <p class="w3-large"><a href="https://www.joomla.ch" target="_blank">Joomla</a></p>
+    </div>
+    <div class="w3-twothird w3-padding-large">
+      <a href="https://www.joomla.ch" target="_blank"><img src="joomla.png" width="90%"></a>
+    </div>
+      
+    <div class="w3-third w3-padding-large">
+      <p class="w3-large"><a href="https://typo3.org" target="_blank">Typo3</a></p>
+    </div>
+    <div class="w3-twothird w3-padding-large">
+      <a href="https://typo3.org" target="_blank"><img src="typo3.png" width="90%"></a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-black w3-center w3-opacity" style="font-family: 'Open Sans Condensed', sans-serif;"> 
+  <p class="w3-small">Bruno Wenk, März 2018</p>
+  <p><img src="PublicDomain.svg"></p> 
+ <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
+
